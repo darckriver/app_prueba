@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+body {padding:0;margin:0; background-color:#CCF; }
+#page1 {padding:0; margin:0; width:100%; height:100%;}
+#page2 {padding:0; margin:0; width:100%; height:100%;}
+
+/*ontroles de pagina*/
+.tit  {padding:10px;margin:0; background-color:#F63;}
+.tit h1 {margin:0; padding:0; color:#096; font: arial 15px bold; }
+.content { margin:0; padding:10px; background-color:#903;}
+
+/* Controloes HMenu*/
+.hmenu{ padding:0;margin:0; list-style:none;}
+.hmenu .tit {margin:0;padding:5px; color:#066; font:Arial bold 19 px; background:transparent;}
+.hmenu .btn { margin:5px 0; padding:5px; font:17px Verdana; background-color:#960; box-shadow: 10px 2px 10px #00CC66;}
+.hmenu a    {color:#FFF;  text-decoration:underline;}
+.hmenu a:hover {color:#F00; text-align:right; text-decoration:underline; }
+.search input { background-color:#009; margin:0; padding:0; font:35px arial; color:#FFF;}
+.search button{ height:50px }

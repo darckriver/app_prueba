@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Aplic. Web de jQuery Mobile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="stilos/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="stilos/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/cordova-2.1.0.js" type="text/javascript"></script>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/funk.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="Home">
+	<div data-role="header">
+		<h1>Notificaciones</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#beep">Sonido del dispositivo</a></li>
+            <li><a href="#vibrate">Vibracion</a></li>
+			<li><a href="#alert">Alerta</a></li>
+            <li><a href="#confirm">Confirmacion</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>pr&aacute;ctica de phonegap</h4>
+	</div>
+</div>
+
+<div data-role="page" id="beep">
+	<div data-role="header">
+		<h1>Sonidos del dispositivo</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li class="btn b1">1 beep</li>
+            <li class="btn b2">3 beep</li>
+            <li class="btn b3">5 beep</li>
+            
+		</ul>	
+	</div>
+	<div data-role="footer">
+		<h4>pr&aacute;ctica de phonegap</h4>
+	</div>
+</div>
+
+<div data-role="page" id="vibrate">
+	<div data-role="header">
+		<h1>Vibraciones</h1>
+	</div>
+	<div data-role="content">	
+		  <ul data-role="controlgroup" data-type="vertical" class="localnav">
+				<li class="btn v1"><a data-role="button" class="ui-btn-active">1 vibraci&oacute;n</a></li>
+				<li class="btn v2"><a data-role="button" class="ui-btn-active">2 vibraciones</a></li>
+				
+			</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="alert">
+	<div data-role="header">
+		<h1>Alertas</h1>
+	</div>
+	<div data-role="content">	
+    		<div style="width:100%;height:300px;background-color:#0F0" id="right" ></div>
+				
+	</div>
+	<div data-role="footer">
+		<h4>pr&aacute;ctica de phonegap</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="confirm">
+	<div data-role="header">
+		<h1>Mensaje de confirmaci&oacute;n</h1>
+	</div>
+	<div data-role="content">	
+    		<div style="width:100%;height:300px;background-color:#0F0" id="left" ></div>
+				
+	</div>
+	<div data-role="footer">
+		<h4>pr&aacute;ctica de phonegap</h4>
+	</div>
+</div>
+
+</body>
+</html>
