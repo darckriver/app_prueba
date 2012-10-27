@@ -76,7 +76,7 @@ $(document).ready(function(e) {
 			}
 		});
 		$('#right').swiperight(function(){
-			showAlert(device.name);
+			showAlert(window.device.name);
 		});
 		$('#left').swipeleft(function(){
 			navigator.notification.confirm('¿Qué desea hacer?',function(boton){
