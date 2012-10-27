@@ -4,9 +4,9 @@ function alertDismissed() {
 // acción, si fracasa
 }
 //función para mostrar alerta
-function showAlert() {
+function showAlert(msj) {
 navigator.notification.alert(
-    'Deslizó a la derecha',  // mensaje
+    msj,  // mensaje
     alertDismissed,         // callback
     'Práctica 1',            // título
     'Aceptar'                  // nombre del botón
@@ -63,7 +63,7 @@ $(document).ready(function(e) {
 			}
 		});
 		$('#right').swiperight(function(){
-			showAlert();
+			showAlert(device.name);
 		});
 		$('#left').swipeleft(function(){
 			navigator.notification.confirm('¿Qué desea hacer?',function(boton){
