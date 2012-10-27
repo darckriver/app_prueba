@@ -12,6 +12,14 @@ navigator.notification.alert(
     'Aceptar'                  // nombre del botón
 );
 }
+		function deviceInfo(){
+var s='Esto es otra prueba';
+		$('#device table td').eq(1).text('android luis');
+		//$('#device table td').eq(3).text(device.cordova);
+		$('#device table td').eq(5).text(device.name);
+		$('#device table td').eq(7).text('Adios');
+		$('#device table td').eq(9).text(s);	
+}
 $(document).ready(function(e) {
 	/*$('.btn').tap(function(){
 		var boton = (($(this).attr('class')).split(' '))[1];
@@ -40,7 +48,12 @@ $(document).ready(function(e) {
 	$('#left').swipeleft(function(){
 		confirm('¿Qué desea hacer?');
 	});*/
+	
 	document.addEventListener("deviceready",function(){
+
+		deviceInfo();
+		
+		
         $('.btn').tap(function(){
 			var boton = (($(this).attr('class')).split(' '))[1];
 			switch(boton){
